@@ -1,0 +1,158 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+header {
+    background-color: #f2f2f2;
+    display: flexbox;
+    flex-direction: column;
+    font-family: "roboto";
+    padding-bottom: 20px;
+    padding-right: 40px;
+}
+h1 {
+    display: flexbox;
+    font-family: "Roboto";
+    color: #20a8b4;
+    padding: 0;
+    margin-bottom: 0;
+    margin-left: 20px;
+}
+span {
+    white-space: pre-wrap;
+}
+.orangeText {
+    color: #ff5c0f;
+}
+ul {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    text-decoration: none;
+    margin-top: 0;
+    padding: 0;
+}
+li {
+    list-style-type: none;
+    text-decoration: none;
+    font-family: "Roboto";
+    margin-top: 10px;
+    padding-left: 0;
+    margin-left: 20px;
+
+}
+li a {
+    color:#000;
+}
+li a:link {
+    text-decoration: none;
+    color: none;
+}
+li a:visited {
+    text-decoration: none;
+    color: none;
+    }
+li a:hover {
+    color: #ff5c0f;
+}
+
+.button {
+    display: block;
+    margin-left: 20px;
+    color: #fff;
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+    background-color: #20a8b4;
+    padding: 12px;
+    border-radius: 10px;
+    font-family: "Roboto";
+    width: 100%;
+    box-sizing: border-box;
+}
+.button:link {
+    text-decoration: none;
+}
+.button:visited {
+    text-decoration: none;
+    color: #fff;
+}
+.button:hover {
+    background-color: #ff5c0f;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    font-family: "Roboto";
+    margin-top: 60px;
+    padding-right: 40px;
+}
+.center {
+    margin-left: 20px;
+    margin-bottom: 25px;
+}
+.image {
+    display: none;
+}
+
+
+
+/*desktop view!!*/
+
+
+
+@media only screen and (min-width: 768px) {
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    background-color: #f2f2f2;
+}
+h1 {
+    order: 0;
+    flex-grow: 2;
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    align-self: baseline;
+    flex-wrap: nowrap;
+}
+li {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.button {
+    width: auto;
+    display: flex;
+}
+.contactButton {
+    margin-right: 20px;
+}
+.flex-container {
+    display: inline-flex;
+    flex-direction: column;
+    margin-top: 150px;
+}
+.image {
+    display: flex !important;
+    flex-direction: row;
+    width: 400px;
+    height: auto;
+    float: right;
+    margin-right: 150px;
+    margin-top: 100px;
+}
+sp {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-align: right;
+}
+}
